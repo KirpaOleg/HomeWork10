@@ -1,0 +1,33 @@
+  * {
+    box-sizing: border-box;
+  }
+  .time {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    border: 3px solid red;
+    margin-top: 200px;
+    position: relative;
+  }
+  .clock {
+    position: absolute;
+    top: 55px;
+    left: 60px;
+  }
+  .clock img {
+    width: 400px;
+    height: 400px;
+  }
+  .arrow {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    animation: move 10s linear;
+  }
+  .arrow img {
+    transform: rotate(-23deg);
+  }
+  @keyframes move {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+  }
